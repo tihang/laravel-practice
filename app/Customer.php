@@ -10,6 +10,10 @@ class Customer extends Model
     
     protected $guarded = [];
 
+    protected $attributes = [
+        'active' => '1'
+    ];
+
     public function getActiveAttribute($attribute){
         return [
             '0' => 'Inactive',
